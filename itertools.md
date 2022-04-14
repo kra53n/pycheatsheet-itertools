@@ -113,7 +113,7 @@ combinations_with_replacement('abcd', 2) | `aa ab ac ad bb bc bd cc cd dd`
 ```python
 import itertools
 
-dignities = list(map(str, range(1, 11))) + ['валет', 'дама', 'король', 'туз']
+dignities = [*map(str, range(1, 11)), 'валет', 'дама', 'король', 'туз']
 suits = ['пики', 'трефы', 'черви', 'бубны']
 
 print(*(itertools.product(suits, dignities)))
