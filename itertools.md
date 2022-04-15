@@ -47,7 +47,7 @@ islice() | последовательность, [начало,] конец [, �
 pairwise() | последовательность | (p[0], p[1]), (p[2], p[3]), ... | `pairwise('мишка') --> ми иш шк ка`
 starmap() | func, seq | func(*seq[0]), func(*seq[1]), ... | `starmap(pow, [(2, 5), (3, 2)]) --> 32 9`
 tee() | func, seq | func(*seq[0]), func(*seq[1]), ... | `starmap(pow, [(2, 5), (3, 2)]) --> 32 9`
-zpi_longest() | p, q, ... | (p[0], q[0]), (p[1]), (p[1], q[1]), ... | `itertools.zip_longes('abcd', 'xy', fillvalue) --> ax by c- d-`
+zpi_longest() | p, q, ... | (p[0], q[0]), (p[1]), (p[1], q[1]), ... | `itertools.zip_longest('abcd', 'xy', fillvalue) --> ax by c- d-`
 
 ### Комбинационные итераторы
 
