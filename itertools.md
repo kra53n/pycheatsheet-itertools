@@ -159,6 +159,8 @@ for idx, elem in enumerate(itertools.product(seq, repeat=4), 1):
         break
 ```
 
+Результат: `195 ('в', 'д', 'п', 'р')`.
+
 #### Пример 4
 
 Создадим таблицу истинности и загрузим её в csv файл.
@@ -178,3 +180,7 @@ with open("test.csv", 'w') as csvfile:
         exec(f'{variables.replace(" ", ", ")} = map(int, row)')
         writer.writerow([*row] + ['1' if eval(func) else '0'])
 ```
+
+Результат:
+
+![comb_iters_ex4](imgs/comb_iters_ex4.png)
