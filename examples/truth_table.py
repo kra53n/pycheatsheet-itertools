@@ -4,7 +4,7 @@ import csv
 variables = 'a b c d e'
 func = 'not(a + b) * (c + e) <= d * b'
 
-with open("test.csv", 'w') as csvfile:
+with open("test.csv", 'w', newline='\n') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(variables.replace(' ', '') + 'f')
 
