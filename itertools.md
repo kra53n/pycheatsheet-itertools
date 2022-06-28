@@ -307,7 +307,7 @@ with open('test.csv', 'w', newline='\n') as csvfile:
         writer.writerow([*row] + ['1' if eval(func) else '0'])
 ```
 
-Соединённое воедино получим нижележащее.
+Вышеописанный код:
 
 ```python
 import itertools
